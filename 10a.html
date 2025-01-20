@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .add-to-cart {
+        background-color: rgba(255, 255, 0, 0.723);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 15px;
+        font-weight: bold;
+      }
+
+      .request-now {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 7px;
+        margin-left: 10px;
+        font-weight: bold;
+      }
+
+      .schedule-for-later {
+        background-color: rgba(128, 128, 128, 0.362);
+        color: black;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 7px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="request-now">Request now</button>
+    <button class="schedule-for-later">Schedule for later</button>
+
+    <button class="js-button">Test</button>
+
+    <script>
+      const check = document.querySelector('.js-button');
+      console.log(check.classList.contains('js-button'));
+    </script>
+  </body>
+</html>
